@@ -8,10 +8,8 @@ L'objectif de ce test est de créer et d'éditer des tâches, ainsi que de suppr
 
 ---
 
-### 2️⃣ **Stack technologique et choix techniques**
+### 2️⃣ **Stack technologique et choix techniques**💻
 
-```md
-## 💻 Stack technique
 
 - **Frontend** : 
   - **React** : Choisi pour sa réactivité, son écosystème mature et sa capacité à créer des interfaces utilisateur dynamiques.
@@ -27,10 +25,8 @@ L'objectif de ce test est de créer et d'éditer des tâches, ainsi que de suppr
 
 ---
 
-### 3️⃣ **Explications sur les fonctionnalités principales**.
+### 3️⃣ **Explications sur les fonctionnalités principales**🚀 
 
-```md
-## 🚀 Fonctionnalités principales
 
 - **Gestion des tâches** : L'application permet de créer, éditer, et supprimer des tâches.
 - **Création d'une tâche** : Lorsqu'un utilisateur saisit une tâche et clique sur "Ajouter", une requête POST est envoyée au backend pour enregistrer la nouvelle tâche dans la base de données.
@@ -39,25 +35,21 @@ L'objectif de ce test est de créer et d'éditer des tâches, ainsi que de suppr
 
 ---
 
-### 4️⃣ **Problèmes rencontrés et solutions**
+### 4️⃣ **Problèmes rencontrés et solutions**🛠️
 
-```md
-## 🛠️ Problèmes rencontrés et solutions
 
 1. **Gestion du bouton "Save"** :  
      Il y a une restriction qui dit que la tâche ne peut pas être mise à jour si le nom de la tâche n'a pas changé. Cela signifie qu'on doit contrôler l'état du bouton pour qu'il ne soit pas activé lorsque le texte de la tâche reste le même.
    **Solution** : En comparant task.name === editingTask[task.id] pour désactiver le bouton. C'est une bonne approche pour éviter des requêtes inutiles
 
-2. **La mise à jour de la base de données MySQL** :  
+3. **La mise à jour de la base de données MySQL** :  
    J'ai dû configurer correctement la base de données MySQL et m'assurer que toutes les migrations Prisma étaient exécutées correctement.  
    **Solution** : J'ai utilisé Docker pour démarrer rapidement un container MySQL et configuré la connexion via les variables d'environnement dans `.env`.
 
 ---
 
-### 5️⃣ **Expérience d'exécution du projet**
+### 5️⃣ **Expérience d'exécution du projet**📝
 
-```md
-## 📝 Expérience d'exécution du projet
 
 - **Environnement local** : L'installation des dépendances avec `yarn` a été simple, et la mise en place de Docker pour MySQL a été très pratique pour éviter d'installer directement MySQL sur la machine locale.
 - **Connexion Frontend/Backend** : La gestion des API entre React et NestJS s'est bien déroulée grâce à l'utilisation de hooks personnalisés dans React et aux contrôleurs API dans NestJS.
@@ -66,9 +58,6 @@ L'objectif de ce test est de créer et d'éditer des tâches, ainsi que de suppr
 ---
 
 ### 7️⃣ **Lien vers la vidéo de démonstration **📽️
-
-
-```md
  
 [Lien vers la vidéo de démonstration](https://drive.google.com/file/d/1dmQN_YTJapzadumir9CkhVOUyiiQhieh/view?usp=sharing) 
 
@@ -76,10 +65,8 @@ Cette vidéo montre l'exécution de l'application avec la création, l'édition 
 
 ---
 
-### 8️⃣ **Améliorations possibles**
+### 8️⃣ **Améliorations possibles**⚙️
 
-```md
-## ⚙️ Améliorations possibles
 
 - **Authentification des utilisateurs** : Ajouter une fonctionnalité d'authentification pour que chaque utilisateur ait ses propres tâches.
 - **Gestion des priorités** : Intégrer un système de priorités pour chaque tâche, permettant à l'utilisateur de définir si la tâche est de **haute**, **moyenne**, ou **basse** priorité. Cela pourrait améliorer l'organisation et aider les utilisateurs à se concentrer sur les tâches les plus urgente.
@@ -92,7 +79,5 @@ Cette vidéo montre l'exécution de l'application avec la création, l'édition 
 
 ### 9️⃣ **Conclusion**🎉
 
-
-```md 
 
 Ce test m'a permis de travailler sur un projet full-stack avec une architecture moderne, en utilisant des technologies populaires comme React, NestJS et MySQL. J'ai apprécié le processus de développement et de résolution de problèmes, et j'ai appris beaucoup sur la gestion des tâches, la communication entre frontend et backend, ainsi que sur l'utilisation de Prisma pour la gestion de base de données.
